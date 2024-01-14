@@ -5,6 +5,10 @@ body {
 	justify-content: center;
 	height: 100vh;
 	margin: 0;
+	border: 2px solid black;
+	box-sizing: border-box;
+	border-radius: 23px;
+	color:	#9f3ebf;
 }
 
 .calculator {
