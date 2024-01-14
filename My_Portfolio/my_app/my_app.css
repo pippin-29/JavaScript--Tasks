@@ -7,7 +7,7 @@ body {
 	margin: 0;
 	border: 2px solid black;
 	box-sizing: border-box;
-	border-radius: 23px;
+	border-radius: 23px 0 0 23px;
 	color:	#9f3ebf;
 }
 
