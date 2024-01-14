@@ -19,6 +19,7 @@ function calculateSum()
 	{
 		// Calculate and display the sum
 		var sum = num1 + num2;
-		resultParagraph.textContent = "Result:" + sum
+		resultParagraph.textContent = "Result: " + sum
 	}
+	console.log(`test`)
 }
