@@ -18,7 +18,7 @@ Here's a breakdown of each part:
 ## <title>Your Page Title</title>: 
 	Sets the title of the webpage, which appears in the browser tab.
 
-## <body>: 
+## ```<body>:```
 	The main content of the webpage goes here, such as text, images, forms, etc.
 
     JavaScript code can be included within the <body> section or at the end to ensure that it executes after the HTML content has loaded.
