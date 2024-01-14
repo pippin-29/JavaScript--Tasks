@@ -18,7 +18,7 @@ function calculateSum()
 	else
 	{
 		// Calculate and display the sum
-		const sum = num1 + num2;
-		resultParagraph.textContent = `Result: ${sum}`
+		var sum = num1 + num2;
+		resultParagraph.textContent = "Result:" + sum
 	}
 }
