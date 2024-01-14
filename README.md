@@ -1,6 +1,6 @@
 ## JavaScript--Tasks
 
-   # Task: Simple Web Page
+    # Task: Simple Web Page
         Create an HTML file with a basic structure.
         Use JavaScript to display a greeting message or any dynamic content on the page.
         Commit and push the code to GitHub.
@@ -21,7 +21,7 @@
         Use JavaScript to dynamically modify the content or appearance of the page when the user interacts with the element.
         Commit and push the code to GitHub.
 
-   # Task: Local Storage Usage
+    # Task: Local Storage Usage
         Use JavaScript to store and retrieve data from the browser's local storage.
         Implement a feature where user data persists even after the page is refreshed.
         Commit and push the code to GitHub.
