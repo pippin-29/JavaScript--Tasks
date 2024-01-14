@@ -5,14 +5,25 @@ body {
 	justify-content: center;
 	height: 100vh;
 	margin: 0;
-	border: 2px solid black;
-	box-sizing: border-box;
-	border-radius: 23px 0 0 23px;
+	
+	
+	
 	color:	#9f3ebf;
 }
 
-.calculator {
+.calculator1 {
 	text-align: center;
+	border: 2px solid black;
+	box-sizing: border-box;
+	border-radius: 23px 0 0 23px;
+
+}
+
+.calculator2 {
+	text-align: center;
+	border: 2px solid black;
+	box-sizing: border-box;
+	border-radius: 0px 23px 23px 0px;
 }
 
 input, button {
