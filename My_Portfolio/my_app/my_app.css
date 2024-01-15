@@ -6,24 +6,29 @@ body {
 	height: 100vh;
 	margin: 0;
 	
-	
-	
 	color:	#9f3ebf;
+}
+
+.calculator0 {
+	text-align: center;
+	border: 2px solid black;
+	box-sizing: border-box;
+	border-radius: 23px 23px 23px 23px;
+
 }
 
 .calculator1 {
 	text-align: center;
 	border: 2px solid black;
 	box-sizing: border-box;
-	border-radius: 23px 0 0 23px;
-
+	border-radius: 0px 23px 23px 0px;
 }
 
 .calculator2 {
 	text-align: center;
 	border: 2px solid black;
 	box-sizing: border-box;
-	border-radius: 0px 23px 23px 0px;
+	border-radius:23px 0px 0px 23px;
 }
 
 input, button {
