@@ -1,0 +1,23 @@
+.beatbox {
+	text-align: center;
+	border: 2px solid black;
+	box-sizing: border-box;
+	border-radius: 23px 23px 23px 23px;
+
+
+}
+
+.checkbox-custom-fill-red {
+	width: 20px;
+	height: 20px;
+	background-color: blueviolet;
+	border: 1px solid black;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.checkbox-custom-fill-red:checked {
+	background-color: darkmagenta;
+	border: 1px solid black;
+}
+
