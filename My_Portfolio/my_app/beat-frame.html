@@ -6,14 +6,37 @@
 		<link rel="stylesheet" href="beat-frame.css">
 	</head>
 	<body>
+
+			<audio id="bing" src="sounds/bing.wav"></audio>
+			<audio id="click" src="sounds/click.wav"></audio>
+			<audio id="doof" src="sounds/doof.wav"></audio>
+			<audio id="moo" src="sounds/moo.wav"></audio>
+			<audio id="shhh" src="sounds/shhh.wav"></audio>
+
+
 		<div class="beatbox">
 			<h3>BeatBoxer</h3>
 
-			<div class="instrument0">
+			<form action="your-server-endpoint" method="post">
+				<label for="tempoSelect">Select Tempo</label>
+				<select id="tempoSelect" name="tempo">
+					<option value="Largo">Largo</option>
+					<option value="Adagio">Adagio</option>
+					<option value="Andante">Andante</option>
+					<option value="Moderato">Moderato</option>
+					<option value="Allegro">Allegro</option>
+					<option value="Presto">Presto</option>
+					<option value="Prestissimo">Prestissimo</option>
+				</select>
+			</form>
+			<br>
+
+				
+			<div class="instrument">
 
 				<form action="your-server-endpoint" method="post">
-					<label for="instrumentSelect">></label>
-					<select id="instrumentSelect" name="instrument0">
+					<label for="instrumentSelect0">></label>
+					<select id="instrumentSelect0" name="instrumentSet0">
 						<option value="click">click</option>
 						<option value="doof">doof</option>
 						<option value="shhh">shhh</option>
@@ -25,30 +48,30 @@
 
 
 				<label for="c00">C-00</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c00" name="c00">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c00" name="instrumentSet0CheckBox">
 				<label for="c01">C-01</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c01" name="c01">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c01" name="instrumentSet0CheckBox">
 				<label for="c02">C-02</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c02" name="c02">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c02" name="instrumentSet0CheckBox">
 				<label for="c03">C-03</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c03" name="c03">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c03" name="instrumentSet0CheckBox">
 				<label for="c04">C-04</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c04" name="c04">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c04" name="instrumentSet0CheckBox">
 				<label for="c05">C-05</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c05" name="c05">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c05" name="instrumentSet0CheckBox">
 				<label for="c06">C-06</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c06" name="c06">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c06" name="instrumentSet0CheckBox">
 				<label for="c07">C-07</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c07" name="c07">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c07" name="instrumentSet0CheckBox">
 				<label for="c08">C-08</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c08" name="c08">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c08" name="instrumentSet0CheckBox">
 			</div>
-			<div class="instrument1">
+			<div>
 
 
 				<form action="your-server-endpoint" method="post">
-					<label for="instrumentSelect">></label>
-					<select id="instrumentSelect" name="instrument1">
+					<label for="instrumentSelect1">></label>
+					<select id="instrumentSelect1" name="instrumentSet1">
 						<option value="click">click</option>
 						<option value="doof">doof</option>
 						<option value="shhh">shhh</option>
@@ -58,30 +81,30 @@
 				</form>
 
 				<label for="c10">C-00</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c10" name="c10">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c10" name="instrumentSet1CheckBox">
 				<label for="c11">C-01</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c11" name="c11">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c11" name="instrumentSet1CheckBox">
 				<label for="c12">C-02</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c12" name="c12">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c12" name="instrumentSet1CheckBox">
 				<label for="c13">C-03</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c13" name="c13">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c13" name="instrumentSet1CheckBox">
 				<label for="c14">C-04</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c14" name="c14">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c14" name="instrumentSet1CheckBox">
 				<label for="c15">C-05</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c15" name="c15">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c15" name="instrumentSet1CheckBox">
 				<label for="c16">C-06</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c16" name="c16">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c16" name="instrumentSet1CheckBox">
 				<label for="c17">C-07</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c17" name="c17">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c17" name="instrumentSet1CheckBox">
 				<label for="c18">C-08</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c18" name="c18">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c18" name="instrumentSet1CheckBox">
 			</div>
-			<div class="instrument2">
+			<div class="instrument">
 
 
 				<form action="your-server-endpoint" method="post">
-					<label for="instrumentSelect">></label>
-					<select id="instrumentSelect" name="instrument2">
+					<label for="instrumentSelect2">></label>
+					<select id="instrumentSelect2" name="instrumentSet2">
 						<option value="click">click</option>
 						<option value="doof">doof</option>
 						<option value="shhh">shhh</option>
@@ -91,30 +114,30 @@
 				</form>
 
 				<label for="c20">C-00</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c20" name="c20">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c20" name="instrumentSet2CheckBox">
 				<label for="c21">C-01</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c21" name="c21">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c21" name="instrumentSet2CheckBox">
 				<label for="c22">C-02</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c22" name="c22">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c22" name="instrumentSet2CheckBox">
 				<label for="c23">C-03</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c23" name="c23">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c23" name="instrumentSet2CheckBox">
 				<label for="c24">C-04</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c24" name="c24">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c24" name="instrumentSet2CheckBox">
 				<label for="c25">C-05</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c25" name="c25">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c25" name="instrumentSet2CheckBox">
 				<label for="c26">C-06</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c26" name="c26">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c26" name="instrumentSet2CheckBox">
 				<label for="c27">C-07</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c27" name="c27">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c27" name="instrumentSet2CheckBox">
 				<label for="c28">C-08</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c28" name="c28">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c28" name="instrumentSet2CheckBox">
 			</div>
-			<div class="instrument3">
+			<div class="instrument">
 
 
 				<form action="your-server-endpoint" method="post">
-					<label for="instrumentSelect">></label>
-					<select id="instrumentSelect" name="instrument3">
+					<label for="instrumentSelect3">></label>
+					<select id="instrumentSelect3" name="instrumentSet3">
 						<option value="click">click</option>
 						<option value="doof">doof</option>
 						<option value="shhh">shhh</option>
@@ -124,58 +147,70 @@
 				</form>
 
 				<label for="c30">C-00</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c30" name="c30">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c30" name="instrumentSet3CheckBox">
 				<label for="c31">C-01</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c31" name="c31">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c31" name="instrumentSet3CheckBox">
 				<label for="c32">C-02</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c32" name="c32">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c32" name="instrumentSet3CheckBox">
 				<label for="c33">C-03</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c33" name="c33">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c33" name="instrumentSet3CheckBox">
 				<label for="c34">C-04</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c34" name="c34">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c34" name="instrumentSet3CheckBox">
 				<label for="c35">C-05</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c35" name="c35">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c35" name="instrumentSet3CheckBox">
 				<label for="c36">C-06</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c36" name="c36">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c36" name="instrumentSet3CheckBox">
 				<label for="c37">C-07</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c37" name="c37">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c37" name="instrumentSet3CheckBox">
 				<label for="c38">C-08</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c38" name="c38">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c38" name="instrumentSet3CheckBox">
 			</div>
-			<div class="instrument4">
+			<div>
 
+				<div class="instrument">
+					<form action="your-server-endpoint" method="post">
+						<label  for="instrumentSelect4">></label>
+						<select id="instrumentSelect4" name="instrumentSet4">
+							<option value="click">click</option>
+							<option value="doof">doof</option>
+							<option value="shhh">shhh</option>
+							<option value="bing">bing</option>
+							<option value="cow">mystery0</option>
+						</select>
+					</form>
+				</div>
 
-				<form action="your-server-endpoint" method="post">
-					<label for="instrumentSelect">></label>
-					<select id="instrumentSelect" name="instrument4">
-						<option value="click">click</option>
-						<option value="doof">doof</option>
-						<option value="shhh">shhh</option>
-						<option value="bing">bing</option>
-						<option value="cow">mystery0</option>
-					</select>
-				</form>
 
 				<label for="c40">C-00</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c40" name="c40">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c40" name="instrumentSet4CheckBox">
 				<label for="c41">C-01</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c41" name="c41">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c41" name="instrumentSet4CheckBox">
 				<label for="c42">C-02</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c42" name="c42">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c42" name="instrumentSet4CheckBox">
 				<label for="c43">C-03</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c43" name="c43">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c43" name="instrumentSet4CheckBox">
 				<label for="c44">C-04</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c44" name="c44">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c44" name="instrumentSet4CheckBox">
 				<label for="c45">C-05</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c45" name="c45">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c45" name="instrumentSet4CheckBox">
 				<label for="c46">C-06</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c46" name="c46">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c46" name="instrumentSet4CheckBox">
 				<label for="c47">C-07</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c47" name="c47">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c47" name="instrumentSet4CheckBox">
 				<label for="c48">C-08</label>
-				<input type="checkbox" class="checkbox-custom-fill-red" id="c48" name="c48">
+				<input type="checkbox" class="checkbox-custom-fill-red" id="c48" name="instrumentSet4CheckBox">
 			</div>
+
+
+			<div class="play-button">
+					<button onclick="play()">PLAY</button>
+					<button onclick="stop()">STOP</button>
+			</div>
+
 		</div>
+
+
+		
 		<script src="beat-frame.js"></script>
 	</body>
 </html>
