@@ -31,7 +31,14 @@ body {
 }
 
 .beat-frame {
-	width: 1024%;
+	width: 100%;
+	height: 512px;
+	border: 0;
+	margin: 0;
+}
+
+.form-frame {
+	width: 100%;
 	height: 512px;
 	border: 0;
 	margin: 0;
