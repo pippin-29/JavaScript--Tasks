@@ -5,8 +5,6 @@ var instrumentSelected1 = document.getElementById("instrumentSelect1");
 var instrumentSelected2 = document.getElementById("instrumentSelect2");
 var instrumentSelected3 = document.getElementById("instrumentSelect3");
 var instrumentSelected4 = document.getElementById("instrumentSelect4");
-var 
-
 
  // Add an event listener for the change event
 instrumentSelected0.addEventListener("change", function() {
