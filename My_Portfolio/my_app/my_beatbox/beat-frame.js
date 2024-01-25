@@ -5,6 +5,7 @@ var instrumentSelected1 = document.getElementById("instrumentSelect1");
 var instrumentSelected2 = document.getElementById("instrumentSelect2");
 var instrumentSelected3 = document.getElementById("instrumentSelect3");
 var instrumentSelected4 = document.getElementById("instrumentSelect4");
+var 
 
 
  // Add an event listener for the change event
@@ -63,84 +64,45 @@ instrumentSelected4.addEventListener("change", function() {
 	});
 });
 
+function findTempo(tempoSelect)
+{
+	var tempo_count;
+	var tempo_string = tempoSelect.value;
+
+	if (tempo == "Largo")
+		tempo_count = 40;
+	else if (tempo == "Adagio")
+		tempo_count = 66;
+	else if (tempo == "Andante")
+		tempo_count = 76;
+	else if (tempo == "Moderato")
+		tempo_count = 108;
+	else if (tempo == "Allegro")
+		tempo_count = 120;
+	else if (tempo == "Presto")
+		tempo_count = 168;
+	else if (tempo == "Prestissimo")
+		tempo_count = 202;
+
+
+	return tempo_count;
+}
+
 function play()
 {
- var tempo = parseInt(document.getElementById('tempoSelect').value, 10);
- var beat_duration = 60 / tempo * 1000; // Convert seconds to milliseconds
- play_sequence(0, tempo);
- play_sequence(1, tempo);
- play_sequence(2, tempo);
- play_sequence(3, tempo);
- play_sequence(4, tempo);
-
+ var tempoSelect = document.getElementById('tempoSelect');
+ var tempo = findTempo(tempoSelect);
+ if (typeof tempo !== 'undefined') {
+	var beat_duration = 60 / tempo * 1000; // Convert seconds to milliseconds
+ 	
+	play_sequence("instrument0", instrumentSelected0.value, beat_duration);
+ 	play_sequence("instrument1", instrumentSelected1.value, beat_duration);
+ 	play_sequence("instrument2", instrumentSelected2.value, beat_duration);
+ 	play_sequence("instrument3", instrumentSelected3.value, beat_duration);
+ 	play_sequence("instrument4", instrumentSelected4.value, beat_duration);
+ }
 }
 
-function play_sequence(x, tempo)
-{
-	if (x == 0)
-	{
-		var checkbox = document.getElementById("c00");
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		var checkbox = document.getElementById("c01");
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		var checkbox = document.getElementById("c02");
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		var checkbox = document.getElementById("c03");
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		var checkbox = document.getElementById("c04");
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		var checkbox = document.getElementById("myCheckbox");
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		var checkbox = document.getElementById("myCheckbox");
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		var checkbox = document.getElementById("myCheckbox");
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-	}
-	else if (x == 1)
-	{
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-	}
-	else if (x == 2)
-	{
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-	}
-	else if (x == 3)
-	{
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-	}
-	else if (x == 4)
-	{
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-		setTimeout(function() { console.log(x + "ms rest"); }, x);
-	}
-}
 
 function stop()
 {

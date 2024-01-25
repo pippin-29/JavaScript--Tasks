@@ -3,6 +3,9 @@ const num1Input = document.getElementById('num1');
 const num2Input = document.getElementById('num2');
 const resultParagraph = document.getElementById('result');
 
+
+
+
 // Function to calculate the sum
 function calculateSum()
 {
