@@ -12,46 +12,49 @@
 	</head>
 	<body>
 		<div class="form">
-			<br>
-			<form>
+			<form id="myForm" onsubmit="validateForm(event)">
 				<div>
-					<input class="grid-left" type="text" placeholder="Enter Name">
-					<input class="grid-right" type="text" placeholder="Enter DOB">
+					<output id="nameValidate"></output>
+					<input class="grid-left" type="text" placeholder="Enter Name" id="nameInput">
+					<input class="grid-right" type="text" placeholder="Enter DOB" id="DOBInput">
+					<output id="DOBValidate"></output>
 				</div>
 				<div>
-					<input class="grid-left" type="text" placeholder="Enter License Number">
-					<input class="grid-right" type="text" placeholder="Enter House Number">
+					<output id="licenseValidate"></output>
+					<input class="grid-left" type="text" placeholder="Enter License Number" id="licenseInput">
+					<input class="grid-right" type="text" placeholder="Enter House Number" id="housenumberInput">
+					<output id="housenumberValidate"></output>
 				</div>
 				<div>
-					<input class="grid-left" type="text" placeholder="Enter Favorite Popcorn Flava">
-					<input class="grid-right" type="text" placeholder="Enter Steve">
+					<output id="flavaValidate"></output>
+					<input class="grid-left" type="text" placeholder="Enter Favorite Popcorn Flava" id="flavaInput">
+					<input class="grid-right" type="text" placeholder="Enter Steve" id="steveInput">
+					<output id="steveValidate"></output>
 				</div>
 				<div>
-					<input class="grid-left" type="text" placeholder="Leave Church">
-					<input class="grid-right" type="text" placeholder="Find Corn, Place Here">
+					<output id="churchValidate"></output>
+					<input class="grid-left" type="text" placeholder="Leave Church" id="churchInput">
+					<input class="grid-right" type="text" placeholder="Find Corn, Place Here" id="cornInput">
+					<output id="cornValidate"></output>
 				</div>
 				<div>
-					<input class="grid-left" type="text" placeholder="Enter Password">
-					<input class="grid-right" type="text" placeholder="Enter String">
+					<output id="passValidate"></output>
+					<input class="grid-left" type="text" placeholder="Enter Password" id="passInput">
+					<input class="grid-right" type="text" placeholder="Enter String" id="stringInput">
+					<output id="stringValidate"></output>
 				</div>
 				<div>
-					<input class="grid-left" type="text" placeholder="Enter 'Enter'">
-					<input class="grid-right" type="text" placeholder="Enter 'String'">
+					<output id="enterValidate"></output>
+					<input class="grid-left" type="text" placeholder="Enter 'Enter'" id="enterInput">
+					<input class="grid-right" type="text" placeholder="Enter 'String'" id="literalInput">
+					<output id="literalValidate"></output>
 				</div>
 				<div>
-					<button type="save_submit">Validate</button>
+					<output id="fieldsIncomplete"></output>
+					<button type="submit">Validate</button>
 				</div>
-				
-				
-				
-				
-				
-				
-
-				
-			</form>
-			
+			</form>		
 		</div>
-		
+		<script src="my_form.js"></script>
 	</body>
 </html>
