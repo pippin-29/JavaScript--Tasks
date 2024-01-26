@@ -35,6 +35,17 @@ function validateForm(event) {
  // Reset Error Messages
  	fieldsIncomplete.textContent = '';
  	nameValidate.textContent = '';
+	DOBValidate.textContent = '';
+	licenseValidate.textContent = '';
+	housenumberValidate.textContent = '';
+	flavaValidate.textContent = '';
+	steveValidate.textContent = '';
+	churchValidate.textContent = '';
+	cornValidate.textContent = '';
+	passValidate.textContent = '';
+	stringValidate.textContent = '';
+	enterValidate.textContent = '';
+	literalValidate = '';
  //
 
 	if (	nameInput.value.trim() === '' ||
@@ -50,11 +61,12 @@ function validateForm(event) {
 			enterInput.value.trim() === '' ||
 			literalInput.value.trim() === ''	)
 	{
-		fieldsIncomplete.textContent = "Fields Incomplete"
+		fieldsIncomplete.textContent = "Fields Incomplete";
 	}
 	if (/\d/.test(nameInput.value)) 
-		nameValidate.textContent = "Please Do Not Enter Numbers."
-	if
+		nameValidate.textContent = "Name must not be numeric";
+	if (!(/\d/.test(DOBInput.value)))
+		DOBValidate.textContent = "DOB must be numeric only";
 
 		
 
