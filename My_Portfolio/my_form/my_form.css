@@ -11,14 +11,25 @@ h3 {
 
 }
 
+.inline-left {
+	justify-content: left;
+}
+
+.inline-right {
+	justify-content: right;
+
+}
+
 .grid-left {
-	width: 25%;
 	
+	width: 25%;
+	padding: 5px;
 }
 
 .grid-right {
-	width: 25%;
 	
+	width: 25%;
+	padding: 5px;
 }
 
 input[type="text"] {

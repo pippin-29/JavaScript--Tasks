@@ -14,10 +14,14 @@
 		<div class="form">
 			<form id="myForm" onsubmit="validateForm(event)">
 				<div>
-					<output id="nameValidate"></output>
-					<input class="grid-left" type="text" placeholder="Enter Name" id="nameInput">
-					<input class="grid-right" type="text" placeholder="Enter DOB" id="DOBInput">
-					<output id="DOBValidate"></output>
+					<inline class="inline-left">
+						<output id="nameValidate"></output>
+						<input class="grid-left" type="text" placeholder="Enter Name" id="nameInput">
+					</inline>
+					<inline class="inline-right">
+						<input class="grid-right" type="text" placeholder="Enter DOB" id="DOBInput">
+						<output id="DOBValidate"></output>
+					</inline>
 				</div>
 				<div>
 					<output id="licenseValidate"></output>

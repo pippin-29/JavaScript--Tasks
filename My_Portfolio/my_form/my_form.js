@@ -45,7 +45,7 @@ function validateForm(event) {
 	passValidate.textContent = '';
 	stringValidate.textContent = '';
 	enterValidate.textContent = '';
-	literalValidate = '';
+	literalValidate.textcontent = '';
  //
 
 	if (	nameInput.value.trim() === '' ||
@@ -65,8 +65,8 @@ function validateForm(event) {
 	}
 	if (/\d/.test(nameInput.value)) 
 		nameValidate.textContent = "Name must not be numeric";
-	if (!(/\d/.test(DOBInput.value)))
-		DOBValidate.textContent = "DOB must be numeric only";
+	if (!(/^\d{8}$/.test(DOBInput.value)))
+		DOBValidate.textContent = "Error";
 
 		
 
