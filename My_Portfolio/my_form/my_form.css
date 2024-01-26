@@ -10,7 +10,18 @@ h3 {
 
 }
 
+.grid-left {
+	width: 25%;
+	
+}
+
+.grid-right {
+	width: 25%;
+	
+}
+
 input[type="text"] {
+	margin: 2px;
 	padding: 5px;
 	border: 2px solid magenta;
 	background-color: black;
@@ -22,4 +33,16 @@ input[type="text"] {
 input[type="text"]:focus {
 	outline:invert;
 	border: 3px solid black;
+}
+
+button[type="save_submit"] {
+	background-color: darkgray;
+	border: 4px solid darkmagenta;
+	padding: 10px
+}
+
+button[type="save_submit"]:focus {
+	background-color: darkgray;
+	border: 1px solid darkmagenta;
+	padding: 10px
 }
